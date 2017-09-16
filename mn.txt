@@ -1,6 +1,1 @@
-20170916 for git
-以后经常会写文档，经常会上传到这里来托管
-今天真的很开心，哈哈哈哈~~
-```
 git clone https://github.com/chinoukin/cwebs.git
-```
