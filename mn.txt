@@ -1,1 +1,25 @@
 git clone https://github.com/chinoukin/cwebs.git
+Maven2 根据项目生成模版项目，并使用该模板批量创建工程
+
+Maven 2 创建自己的模版，并使用模版创建工程
+
+1.建立样板Maven工程: xxx-yy
+
+2.进入 xxx-yy 工程根目录
+执行:mvn archetype:create-from-project
+目的:生成模版工程文件
+
+3.进入 xxx-yy/target/generated-sources/archetype 
+执行:mvn install
+目的:安装到本地maven仓库
+
+4.创建一个工程目录 yyy-dd
+
+5.进入 yyy-dd 
+执行:mvn archetype:generate -DarchetypeCatalog=local
+<-Dfilter=xxx.yyy:zzz> 如果很多可以过滤一下
+目的:对话模式使用本地工程模版创建工程
+
+不出意外工程就创建完毕了。
+
+6.可选:mvn eclipse:eclipse 转化成eclipse项目
