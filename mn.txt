@@ -23,3 +23,11 @@ Maven 2 创建自己的模版，并使用模版创建工程
 不出意外工程就创建完毕了。
 
 6.可选:mvn eclipse:eclipse 转化成eclipse项目
+
+7.若使用远程仓库的骨架工程来生成工程
+mvn archetype:generate -DarchetypeCatalog=http://192.168.20.142:8081/nexus/content/repositories/releases/archetype-catalog.xml
+新版的maven-archetype-plugin插件(3.1)执行上面命令会报错，如下：
+archetypeCatalog 'http://192.168.20.142:8081/nexus/content/repositories/releases/archetype-catalog.xml' is not supported 
+解决办法：
+使用老板的插件，命令如下：
+mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate -DarchetypeCatalog=http://192.168.20.142:8081/nexus/content/repositories/releases/archetype-catalog.xml
