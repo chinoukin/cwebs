@@ -1,4 +1,8 @@
 git clone https://github.com/chinoukin/cwebs.git
+
+git reset --hard HEAD^
+git push -f
+
 Maven2 根据项目生成模版项目，并使用该模板批量创建工程
 
 Maven 2 创建自己的模版，并使用模版创建工程
