@@ -35,3 +35,6 @@ archetypeCatalog 'http://192.168.20.142:8081/nexus/content/repositories/releases
 解决办法：
 使用老板的插件，命令如下：
 mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate -DarchetypeCatalog=http://192.168.20.142:8081/nexus/content/repositories/releases/archetype-catalog.xml
+
+
+测试内容111
